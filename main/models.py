@@ -7,7 +7,7 @@ class Services(models.Model):
         verbose_name_plural = 'Servislar'
         ordering = ('-id', )
 
-    icon = models.ImageField(upload_to='icon')
+    icon = models.CharField(max_length=50)
     profession = models.CharField(max_length=255)
     content = models.TextField()
 
